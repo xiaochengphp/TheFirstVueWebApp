@@ -1,0 +1,41 @@
+.cartcontrol
+    font-size: 0
+    .cart-decrease
+        display: inline-block
+        padding: 4px 10px 4px 4px
+        transition: all 0.4s linear
+        cursor: pointer
+        &.move-transition
+            opacity: 1
+            transform: translate3d(0,0,0)
+        .inner
+            display: inline-block
+            line-height: 26px
+            font-size: 24px
+            color: rgb(0,160,220)
+            transition all 0.4s linear
+            transform: rotate(0)
+        &.move-enter, &.move-leave
+            opacity: 0
+            transform: translate3d(22px,0,0)
+            .inner
+                transform: rotate(180deg)
+    .cart-count
+        display: inline-block
+        vertical-align: top
+        width: 20px
+        padding-top: 4px
+        line-height: 24px
+        text-align: center
+        font-size: 10px
+        color: rgb(147,153,159)
+        position: absolute
+        left: 27px
+    .cart-add
+        display: inline-block
+        font-size: 24px
+        line-height: 26px
+        padding: 4px 4px 4px 10px
+        color: rgb(0,160,220)
+        cursor: pointer
+

@@ -1,0 +1,54 @@
+.welcome
+    position: fixed
+    left: 0
+    top: 0
+    width: 100%
+    height: 100%
+    background: #222210
+    z-index: 999
+    transition: all 0.5
+    .bg
+        position: absolute
+        left: 0
+        top: 0
+        width: 100%
+        height 100%
+        z-index: 998
+        background: rgba(24,142,99,0.3)
+        .logo
+            width: 200px
+            height: 200px
+            cursor: default
+            opacity: 0
+            transition: all 2s
+            &.wel-transition
+                opacity: 1
+                margin: 20px auto
+            &.wel-enter, &.wel-leave
+                opacity: 0
+                transform: translate3d(0, -150px, 0) rotateY(360deg)
+        .title
+            font-size: 30px
+            font-weight: bold
+            color: #41B883
+            text-align: center
+            margin: 10px 0
+            cursor: default
+        .url
+            font-size: 16px
+            color: #41B883
+            text-align: center
+            cursor: default
+        .enter
+            width: 250px
+            padding: 10px
+            height: 30px
+            line-height: 30px
+            font-size: 20px
+            background: rgba(65,184,131,0.6)
+            border-radius: 5px
+            border: 1px solid #41B883
+            color: #41B883
+            margin: 50px auto
+            text-align: center
+            cursor: pointer
