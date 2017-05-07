@@ -169,7 +169,6 @@
           return true
         }
         this.fold = !this.fold
-        this.p('Hello ')
       },
       empty () {
         this.selectFoods.forEach((food) => {

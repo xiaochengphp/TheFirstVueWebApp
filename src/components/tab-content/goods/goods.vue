@@ -49,6 +49,7 @@
   import Shopcart from 'components/shopcart/shopcart'
   import Cartcontrol from 'components/cartcontrol/cartcontrol'
   import Food from 'components/food/food'
+  import Data from 'common/json/data.json'
   
   export default {
     props: {
@@ -88,14 +89,15 @@
       }
     },
     created () {
-      this.$http.get('../../../static/data.json').then((response) => {
-        response = response.body
-        this.goods = response.goods
-        this.$nextTick(() => {
-          this._initScroll()
-          this._calculateHeight()
-        })
+      // this.$http.get('../../../static/data.json').then((response) => {
+      //   response = response.body
+      //   this.goods = response.goods
+      this.goods = Data.goods
+      this.$nextTick(() => {
+        this._initScroll()
+        this._calculateHeight()
       })
+      // })
       this.classMap = ['decrease', 'discount', 'special', 'invoice', 'guarantee']
     },
     methods: {

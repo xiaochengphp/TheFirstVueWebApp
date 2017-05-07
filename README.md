@@ -4,24 +4,16 @@
 
 ## Build Setup
 
+# 两步骤启动项目
 ``` bash
+# 1. 安装依赖关系
 # install dependencies
 npm install
 
+# 2. npm run dev启动项目 服务器地址 localhost:8080 
 # serve with hot reload at localhost:8080
 npm run dev
 
+# npm run build 打包项目 生成项目在根目录文件夹dlit下
 # build for production with minification
 npm run build
-
-# run unit tests
-npm run unit
-
-# run e2e tests
-npm run e2e
-
-# run all tests
-npm test
-```
-
-For detailed explanation on how things work, checkout the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).

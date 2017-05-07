@@ -75,6 +75,7 @@
     },
     methods: {
       select (type, event) {
+        // console.log(event._constructed)
         if (!event._constructed) {
           return true
         }
